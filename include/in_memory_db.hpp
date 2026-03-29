@@ -17,7 +17,6 @@ struct Node {
 class InMemoryDatabase {
 public:
     explicit InMemoryDatabase(size_t capacity);
-
     void Put(const std::string& key, const std::string& value);
     void Put(const std::string& key, const std::string& value, std::chrono::milliseconds ttl);
     std::optional<std::string> Get(const std::string& key);
